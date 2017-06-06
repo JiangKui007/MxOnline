@@ -8,4 +8,4 @@ class LoginForm(forms.Form):
     password = forms.CharField(required=True,min_length=6)
 
 
-
+class

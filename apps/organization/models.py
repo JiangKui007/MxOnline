@@ -24,13 +24,13 @@ class CityDict(models.Model):
 class CourseOrg(models.Model):
     name = models.CharField(max_length=50,verbose_name=u"机构名称")
     desc = models.TextField(verbose_name=u"机构描述")
-    catgory = models.CharField(max_length=20, verbose_name=u"机构类别",default="pxjg",choices=(("pxjg","培训机构"),("gr","个人"),("gx","高校")))
-    click_nums = models.IntegerField(default=0, verbose_name=u"点击数")
+    category = models.CharField(max_length=20, verbose_name=u"机构类别",default="pxjg",choices=(("pxjg","培训机构"),("gr","个人"),("gx","高校")))
+    click_nums = models.IntegerField(default=0, verbose_name=u"点击数" )
     fav_nums = models.IntegerField(default=0, verbose_name=u"收藏数")
     image = models.ImageField(upload_to="org/%Y/%m", verbose_name=u"logo")
     address = models.CharField(max_length=150, verbose_name=u"机构地址")
     city = models.ForeignKey(CityDict,verbose_name=u"所在城市")
-    add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
+    add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
         verbose_name = u"课程机构"
@@ -49,7 +49,7 @@ class Teacher(models.Model):
     points = models.CharField(max_length=50,verbose_name=u"教学特点")
     click_nums = models.IntegerField(default=0, verbose_name=u"点击数")
     fav_nums = models.IntegerField(default=0, verbose_name=u"收藏数")
-    add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
+    add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
         verbose_name = u"教师"

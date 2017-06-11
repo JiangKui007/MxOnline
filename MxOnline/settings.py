@@ -1,3 +1,4 @@
+#_*_ encoding:utf-8 _*_
 """
 Django settings for MxOnline project.
 
@@ -79,6 +80,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.media',
             ],
         },
     },
@@ -118,6 +120,15 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# #pagiation设置
+# PAGINATION_SETTINGS = {
+#     'PAGE_RANGE_DISPLAYED': 10,
+#     'MARGIN_PAGES_DISPLAYED': 2,
+#
+#     'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+# }
 
 
 # Internationalization

@@ -45,7 +45,7 @@
                             <ul class="selectMenu" id="jsSelectMenu">
                                 <li data-value="course">公开课</li>
                                 <li data-value="org">课程机构</li>
-                                <li data-value="teacher">授课老师</li>
+                                <li data-value="teacher"> 授课老师</li>
                             </ul>
                         </div>
                         <input id="search_keywords" class="fl" type="text" value="" placeholder="请输入搜索内容"/>
@@ -66,9 +66,9 @@
 								</a>
 							</li>
 							<li >
-								<a href="teachers-list.html">授课教师</a>
+								<a href="{% url 'org:org_list' %}"> 授课老师</a>
 							</li>
-							<li class="active" ><a href="org-list.html">授课机构</a></li>
+							<li class="active" ><a href="{% url 'org:org_list' %}">授课机构</a></li>
 						</ul>
 					</div>
 				</div>

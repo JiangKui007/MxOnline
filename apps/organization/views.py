@@ -72,6 +72,6 @@ class AddUserAskView(View):
             user_ask = userask_form.save(commit=True)
             return HttpResponse('{"status":"success"}', content_type='application/json')
         else:
-            return HttpResponse('{"status":"failure","msg":"添加出错"}', content_type='application/json')
+            return HttpResponse('{"status":"fail","msg":"添加出错"}', content_type='application/json')
 
 

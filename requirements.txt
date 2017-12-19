@@ -1,0 +1,16 @@
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ Django==1.9.8
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ django-crispy-forms==1.6.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ django-formtools==2.0
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ django-pure-pagination==0.3.0
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ django-simple-captcha==0.5.5
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ DjangoUeditor==1.8.143
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ httplib2==0.10.3
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ mysql==0.0.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ MySQL-python==1.2.5
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ olefile==0.44
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pbr==3.1.0
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ Pillow==4.1.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pytz==2017.2
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ six==1.10.0
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ stevedore==1.23.0
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ uWSGI==2.0.15
